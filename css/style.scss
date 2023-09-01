@@ -146,11 +146,16 @@ img.fake {
     @extend %gradient;
     border-radius: 20px;
 }
+<<<<<<< HEAD
 .col h3, .col p, .col h4{
     margin: 0;
 }
 .small-col {
     display: flex;
+=======
+.col {
+    display: $f;
+>>>>>>> 44c93db (hi)
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
@@ -179,6 +184,7 @@ img.fake {
 .leftimg img {
     object-fit: cover;
     @extend %genralsize;
+<<<<<<< HEAD
 }
 
 .img-stats{
@@ -195,6 +201,8 @@ img.fake {
     height: 60%;
     object-fit: contain;
     
+=======
+>>>>>>> 44c93db (hi)
 }
 
 /*Right*/
@@ -237,6 +245,7 @@ img.fake {
     border-radius: 20px;
 }
 
+<<<<<<< HEAD
 /*Bottom*/
 .bottom-img {
     width: 300px;
@@ -254,6 +263,8 @@ img.fake {
     justify-content: space-around;
 }
 
+=======
+>>>>>>> 44c93db (hi)
 
 /*page in middle*/
 .page{
