@@ -1,15 +1,13 @@
-
-
 $backblue: rgb(51, 85, 90);
 $sideTopBlue: rgb(62, 128, 145);
-
+$f: flex;
 
 %genralsize {
     width: 100%;
     height: 100%;
 }
 %flexYcenter {
-    display: flex;
+    display: $f;
     align-items: center;
 }
 %gradient {
@@ -36,7 +34,7 @@ body {
     height: 90%;
     border-radius: 20px;
     padding: 10px;
-    display: flex;
+    display: $f;
     position: relative;
 }
 .items {
@@ -62,7 +60,7 @@ img.fake {
     padding-right: 20px;
 }
 .sidebar {
-    display: flex;
+    display: $f;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
@@ -78,15 +76,15 @@ img.fake {
 }
 .top-content {
     width: 200px;
-    display: flex;
+    display: $f;
 }
 .div-top-stuff{
     width: 200px;
-    display: flex;
+    display: $f;
     padding: 20px;
 }
 .top-left {
-    display: flex;
+    display: $f;
     width: 200px;
     margin: 0;
     color: #fff;
@@ -103,8 +101,7 @@ img.fake {
     width: 600px;
 }
 .return{
-    display: flex;
-    align-items: center;
+    @extend %flexYcenter;
     gap: 4px;
 }
 
@@ -113,9 +110,8 @@ img.fake {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    display: flex;
+    @extend %flexYcenter;
     justify-content: center;
-    align-items: center;
 }
 
 /*White Background*/
@@ -138,7 +134,7 @@ img.fake {
 .top {
     width: 100%;
     height: 50%;
-    display: flex;
+    display: $f;
 }
 
 /*Left*/
@@ -160,7 +156,7 @@ img.fake {
     height: 100%;
 }
 .col {
-    display: flex;
+    display: $f;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
@@ -182,8 +178,7 @@ img.fake {
 }
 .leftimg img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    @extend %genralsize;
 }
 
 .img-stats{
@@ -208,10 +203,21 @@ img.fake {
     height: 100%;
     position: relative;
     border-radius: 20px;
-    display: flex;
+    display: $f;
     justify-content: center;
 }
+<<<<<<< HEAD
 
+=======
+.col {
+    display: $f;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 200px;
+    margin: 0 20px;
+}
+>>>>>>> 44c93db (hi)
 .num-img {
     width: 200px;
     height: 200px;
@@ -222,8 +228,7 @@ img.fake {
 }
 .num-img img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    @extend %genralsize;
 }
 .right-background {
     width: 80%;
@@ -248,17 +253,6 @@ img.fake {
     display: flex;
     justify-content: space-around;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*page in middle*/
@@ -294,9 +288,8 @@ a{
 
 .top-quin{
     height: 100px;
-    display: flex;
+    @extend %flexYcenter;
     justify-content: space-between;
-    align-items: center;
 }
 .star{
     height: 150px;
@@ -306,12 +299,12 @@ a{
 }
 .bottom-stuff{
     height: 400px;
-    display: flex;
+    display: $f;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .select{
-    display: flex;
+    display: $f;
     justify-content: space-between;
     width: 100%;
 }
@@ -329,7 +322,7 @@ a{
 .search{
     width: 60%;
     position: relative;
-    display: flex;
+    display: $f;
     justify-content: flex-end;
 }
 .search img{
@@ -349,7 +342,7 @@ a{
 
 /*4 boxes*/
 .boxes{
-    display: flex;
+    display: $f;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
@@ -361,7 +354,7 @@ a{
     height: 200px;
     background-color: orange;
 ;
-    display: flex;
+    display: $f;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
@@ -374,7 +367,7 @@ a{
     background-color: black;
 }
 .bottom-box{
-    display: flex;
+    display: $f;
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -390,9 +383,8 @@ a{
 }
 
 .black-cir{
-    display: flex;
+    @extend %flexYcenter;
     justify-content: center;
-    align-items: center;
 }
 .pink{
     background-color: red;
@@ -407,14 +399,14 @@ a{
 
 /*big-boxes-bottom*/
 .dates{
-    display: flex;
+    display: $f;
     justify-content: space-around;
     gap: 20px;
     padding-top: 20px;
     margin-right: 120px;
 }
 .nums{
-    display: flex;
+    display: $f;
     flex-direction: column;
     justify-content: flex-start;
     gap: 30px;
@@ -426,19 +418,19 @@ a{
     height: 200px;
 }
 .side-by-side{
-    display: flex;
+    display: $f;
     gap: 20px;
 }
 .graph{
     padding: 20px;
-    display: flex;
+    display: $f;
     justify-content: flex-end;
     flex-direction: column;
 }
 
 .box-words{
     padding: 20px;
-    display: flex;
+    display: $f;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -472,9 +464,8 @@ a{
 }
 
 .top-of-stats{
-    display: flex;
+    @extend %flexYcenter;
     justify-content: space-between;
-    align-items: center;
 }
 .top-of-stats img{
     width: 40px;
@@ -490,6 +481,10 @@ a{
 
 .link-and-img{
     @extend %flexYcenter
+}
+
+.left-of-stats{
+    display: $f;
 }
 
 
