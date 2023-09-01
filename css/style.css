@@ -3,12 +3,20 @@ body, html {
   height: 100%;
 }
 
-.whiteback, .topbar, .team, body {
+.link-and-img, .whiteback, .topbar, .team, body {
   display: flex;
   align-items: center;
 }
 
+.left {
+  background-image: linear-gradient(to bottom right, rgb(33, 125, 149), rgb(247, 212, 162));
+}
+
 /*Background*/
+html {
+  overflow: hidden;
+}
+
 body {
   background-color: rgb(51, 85, 90);
   justify-content: center;
@@ -22,6 +30,7 @@ body {
   border-radius: 20px;
   padding: 10px;
   display: flex;
+  position: relative;
 }
 
 .items {
@@ -35,7 +44,8 @@ body {
 }
 
 img.fake {
-  width: 100%;
+  width: 50px;
+  height: 50px;
 }
 
 .team-icon {
@@ -58,14 +68,21 @@ img.fake {
 
 .topbar {
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   height: 100px;
-  width: 100%;
+  width: 84%;
+  gap: 100px;
 }
 
 .top-content {
   width: 200px;
   display: flex;
+}
+
+.div-top-stuff {
+  width: 200px;
+  display: flex;
+  padding: 20px;
 }
 
 .top-left {
@@ -80,18 +97,39 @@ img.fake {
   padding: 0 60px;
 }
 
+.item-back {
+  color: #fff;
+  padding: 0;
+}
+
 .top-content {
   width: 600px;
+}
+
+.return {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.white-cir {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*White Background*/
 .whiteback {
   background-color: #fff;
-  width: 82%;
+  width: 84%;
   height: 80%;
   position: absolute;
   bottom: 50px;
-  right: 80px;
+  right: 95px;
   border-radius: 20px;
   justify-content: center;
 }
@@ -100,4 +138,318 @@ img.fake {
   width: 90%;
   height: 90%;
   background-color: aqua;
+}
+
+.top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+/*Left*/
+.left {
+  width: 50%;
+  height: 100%;
+  background-color: #c8c4c4;
+  position: relative;
+  border-radius: 20px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 200px;
+  margin: 0 20px;
+}
+
+.leftimg {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+}
+
+.leftimg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*Right*/
+.right {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 200px;
+  margin: 0 20px;
+}
+
+.num-img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 100px;
+  top: 0px;
+}
+
+.num-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.right-background {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(247, 212, 162);
+  border-radius: 20px;
+}
+
+/*page in middle*/
+.page {
+  background-color: rgb(255, 255, 255);
+  width: 84%;
+  height: 80%;
+  position: absolute;
+  bottom: 35px;
+  right: 40px;
+  border-radius: 20px;
+  padding: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/*everything*/
+.page h1, .page h2, .page h3, .page h4, .page h5, .page h6, .page p {
+  margin: 0;
+}
+
+.gray-line {
+  background-color: rgb(51, 85, 90);
+  width: 100%;
+  height: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*search layout*/
+.top-quin {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.star {
+  height: 150px;
+}
+
+.bar {
+  height: 50px;
+}
+
+.bottom-stuff {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/**/
+.com-sear {
+  border-radius: 20px;
+  width: 80%;
+  position: relative;
+}
+
+.com-sear input {
+  width: 100%;
+}
+
+.search {
+  width: 60%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search img {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 2px;
+  top: 25%;
+}
+
+.bar a {
+  text-decoration: none;
+  color: black;
+}
+
+/*4 boxes*/
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box-quin {
+  border-radius: 20px;
+  width: 400px;
+  height: 200px;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.black-cir {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.bottom-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.bottom-box h1 {
+  font-size: 90px;
+}
+
+.black-cir p {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: xx-large;
+}
+
+.black-cir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pink {
+  background-color: red;
+}
+
+.yellow {
+  background-color: blue;
+}
+
+.purple {
+  background-color: plum;
+}
+
+/*big-boxes-bottom*/
+.dates {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding-top: 20px;
+  margin-right: 120px;
+}
+
+.nums {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.place-holder {
+  background-color: yellow;
+  width: 80%;
+  height: 200px;
+}
+
+.side-by-side {
+  display: flex;
+  gap: 20px;
+}
+
+.graph {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.box-words {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.big-box {
+  border: 5px solid rgb(51, 85, 90);
+  border-radius: 20px;
+  width: 100%;
+  height: 400px;
+  margin: 20px;
+}
+
+/*stats layout*/
+.main-stats {
+  background-color: rgb(255, 255, 255);
+  width: 84%;
+  height: 80%;
+  position: absolute;
+  bottom: 35px;
+  right: 40px;
+  border-radius: 20px;
+  padding: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.top-of-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-of-stats img {
+  width: 40px;
+  height: 40px;
+}
+
+.main-stats h1, .main-stats h2, .main-stats h3, .main-stats h4, .main-stats h5, .main-stats h6, .main-stats p {
+  margin: 0;
+}
+
+.main-stats a {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
