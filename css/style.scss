@@ -14,6 +14,8 @@ $f: flex;
     background-image: linear-gradient(to bottom right, rgb(33, 125, 149), rgb(247, 212, 162),);
 }
 
+
+
 /*Background*/
 html {
     @extend %genralsize;
@@ -146,21 +148,18 @@ img.fake {
     @extend %gradient;
     border-radius: 20px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .col h3, .col p, .col h4{
     margin: 0;
 }
 .small-col {
     display: flex;
-=======
+}
 .col {
     display: $f;
->>>>>>> 44c93db (hi)
-=======
+}
 .col {
     display: $f;
->>>>>>> 44c93db (hi)
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
@@ -189,8 +188,6 @@ img.fake {
 .leftimg img {
     object-fit: cover;
     @extend %genralsize;
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 
 .img-stats{
@@ -206,11 +203,6 @@ img.fake {
     width: 60%;
     height: 60%;
     object-fit: contain;
-    
-=======
->>>>>>> 44c93db (hi)
-=======
->>>>>>> 44c93db (hi)
 }
 
 /*Right*/
@@ -222,9 +214,7 @@ img.fake {
     display: $f;
     justify-content: center;
 }
-<<<<<<< HEAD
 
-=======
 .col {
     display: $f;
     flex-direction: column;
@@ -233,7 +223,6 @@ img.fake {
     width: 200px;
     margin: 0 20px;
 }
->>>>>>> 44c93db (hi)
 .num-img {
     width: 200px;
     height: 200px;
@@ -253,7 +242,6 @@ img.fake {
     border-radius: 20px;
 }
 
-<<<<<<< HEAD
 /*Bottom*/
 .bottom-img {
     width: 300px;
@@ -271,12 +259,6 @@ img.fake {
     justify-content: space-around;
 }
 
-<<<<<<< HEAD
-=======
->>>>>>> 44c93db (hi)
-
-=======
->>>>>>> 44c93db (hi)
 /*page in middle*/
 .page{
     background-color: rgb(255, 255, 255);
@@ -375,7 +357,6 @@ a{
     width: 400px;
     height: 200px;
     background-color: orange;
-;
     display: $f;
     flex-direction: column;
     justify-content: space-between;
@@ -465,11 +446,6 @@ a{
     margin: 20px;
 }
 
-
-
-
-
-
 /*stats layout*/
 
 .main-stats{
@@ -508,7 +484,3 @@ a{
 .left-of-stats{
     display: $f;
 }
-
-
-
-
