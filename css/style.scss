@@ -147,11 +147,16 @@ img.fake {
     border-radius: 20px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .col h3, .col p, .col h4{
     margin: 0;
 }
 .small-col {
     display: flex;
+=======
+.col {
+    display: $f;
+>>>>>>> 44c93db (hi)
 =======
 .col {
     display: $f;
@@ -185,6 +190,7 @@ img.fake {
     object-fit: cover;
     @extend %genralsize;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 .img-stats{
@@ -201,6 +207,8 @@ img.fake {
     height: 60%;
     object-fit: contain;
     
+=======
+>>>>>>> 44c93db (hi)
 =======
 >>>>>>> 44c93db (hi)
 }
@@ -263,9 +271,12 @@ img.fake {
     justify-content: space-around;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 44c93db (hi)
 
+=======
+>>>>>>> 44c93db (hi)
 /*page in middle*/
 .page{
     background-color: rgb(255, 255, 255);

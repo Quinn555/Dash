@@ -5,7 +5,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .link-and-img, .img-stats, .whiteback, .topbar, .team, body {
+=======
+.link-and-img, .top-of-stats, .black-cir, .top-quin, .whiteback, .white-cir, .return, .topbar, .team, body {
+>>>>>>> 44c93db (hi)
 =======
 .link-and-img, .top-of-stats, .black-cir, .top-quin, .whiteback, .white-cir, .return, .topbar, .team, body {
 >>>>>>> 44c93db (hi)
@@ -196,6 +200,7 @@ img.fake {
   -o-object-fit: cover;
      object-fit: cover;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 .img-stats {
@@ -212,6 +217,8 @@ img.fake {
   height: 60%;
   -o-object-fit: contain;
      object-fit: contain;
+=======
+>>>>>>> 44c93db (hi)
 =======
 >>>>>>> 44c93db (hi)
 }
