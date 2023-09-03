@@ -3,7 +3,7 @@
   height: 100%;
 }
 
-.link-and-img, .top-of-stats, .black-cir, .top-quin, .img-stats, .whiteback, .white-cir, .return, .topbar, .team, body {
+.black-cir, .top-quin, .img-stats, .whiteback, .white-cir, .return, .topbar, .team, body {
   display: flex;
   align-items: center;
 }
@@ -481,25 +481,100 @@ a {
   padding: 20px;
   overflow-y: scroll;
   overflow-x: hidden;
-}
-
-.top-of-stats {
-  justify-content: space-between;
-}
-
-.top-of-stats img {
-  width: 40px;
-  height: 40px;
+  display: flex;
 }
 
 .main-stats h1, .main-stats h2, .main-stats h3, .main-stats h4, .main-stats h5, .main-stats h6, .main-stats p {
   margin: 0;
+  color: rgb(100, 83, 60);
 }
 
-.main-stats a {
-  color: black;
+.but-orange {
+  background-color: rgb(255, 233, 203);
+}
+
+.flex-on {
+  display: flex;
 }
 
 .left-of-stats {
   display: flex;
+  gap: 30px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 68%;
+}
+
+.stats-box {
+  background-color: rgb(247, 212, 162);
+  height: 290px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.top-of-stat-box {
+  background-color: rgb(255, 233, 203);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.midle-of-stats-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+
+.midle-of-stats-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.midle-of-stats-box p {
+  font-size: 10px;
+}
+
+.midle-of-stats-box h1 {
+  font-size: 100px;
+  color: green;
+}
+
+.arow h2 {
+  padding: 20px 0 0 0;
+  font-size: 48px;
+  color: green;
+}
+
+.bottom-of-stats-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  align-items: flex-end;
+}
+
+.top-side-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*left of stats*/
+.right-of-main-stats {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.stats-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5%;
+  width: 100%;
+  padding: 0 10px;
 }/*# sourceMappingURL=style.css.map */
