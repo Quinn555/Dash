@@ -157,10 +157,18 @@ img.fake {
 }
 .small-col {
     display: flex;
+<<<<<<< HEAD
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
 }
+=======
+}
+.col {
+    display: $f;
+}
+
+>>>>>>> f2d09a5 (map is off)
 .col {
     display: flex;
     flex-direction: column;
@@ -168,7 +176,7 @@ img.fake {
     gap: 40px;
     height: 100%;
     width: 200px;
-    padding: 20px;
+    margin: 0 20px;
 }
 .left-box {
     display: flex;
@@ -213,6 +221,7 @@ img.fake {
     justify-content: center;
 }
 
+<<<<<<< HEAD
 =======
 .col {
     display: $f;
@@ -223,6 +232,8 @@ img.fake {
     margin: 0 20px;
 }
 >>>>>>> 44c93db (hi)
+=======
+>>>>>>> f2d09a5 (map is off)
 .num-img {
     width: 200px;
     height: 200px;
